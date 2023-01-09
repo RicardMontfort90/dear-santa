@@ -1,0 +1,12 @@
+
+<div class="page" id="search-page">
+    <div class="search-content">
+        <h3>Results by: {{query}}</h3>
+        {{#if present}}
+            {{>presentPartial present}}
+            {{else}}
+            <p>not find it{{query}}.</p><a class="go-back-btn" href="/presents">Go back</a>
+        {{/if}}
+    </div>
+    <img src="" alt="" class="footer">
+</div>

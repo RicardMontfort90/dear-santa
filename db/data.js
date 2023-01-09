@@ -1,7 +1,7 @@
 const data = [
     {
         name: 'LINGÜS',
-        image: 'https://www.amantis.net/lingus-vibrador-sexo-oral/',
+        image: 'https://images01.amantis.net/imagenes/enormes/lingus-vibrador-lingual_02BIG.jpg',
         price: 60,
         recipient: 'Mary',
         description: 'the art of the tongue.'
@@ -25,14 +25,14 @@ const data = [
         image: 'https://www.lacentral.com/9788466328319.jpg',
         price: 14,
         recipient: 'Rick',
-        description: 'A great person with a great life'
+        description: 'A great person with a great experience life'
     },
     {
-        name: 'Lego Star Wars: Death Star',
-        image: 'https://i.ebayimg.com/images/g/Wb4AAOSwuPdifpxC/s-l640.jpg',
-        price: 850,
-        recipient: 'Ale',
-        description: 'This amazingly detailed battle station features an incredible array of minifigure-scale scenes, moving parts, characters and accessories from Episodes IV and VI.'
+        name: 'Club 500 archery bow left hander',
+        image: 'https://contents.mediadecathlon.com/p1529229/k$61f2ce8bb3c8bdd094fade096d75252e/archery-left-hander-bow-club-500.jpg?format=auto&quality=40&f=800x800',
+        price: 85,
+        recipient: 'Judith',
+        description: 'Perfect for a very calm person'
     },
 ];
 
