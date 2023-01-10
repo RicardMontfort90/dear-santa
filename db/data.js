@@ -1,6 +1,6 @@
 const data = [
     {
-        name: 'LINGÜS',
+        name: 'Lingüs',
         image: 'https://images01.amantis.net/imagenes/enormes/lingus-vibrador-lingual_02BIG.jpg',
         price: 60,
         recipient: 'Mary',

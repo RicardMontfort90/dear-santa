@@ -1,8 +1,230 @@
+
+/* Layout */
 body {
-  padding: 50px;
+  margin: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  height: 100vh;
+  
+}
+nav {
+  height: 7%;
+  padding-left: 30px;
+  background-color: #6B1518;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+nav a {
+  color: rgb(17, 174, 38);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.page {
+  height: 100%;
 }
 
-a {
-  color: #00B7FF;
+/* Home Page */
+#home-page {
+  background-image: url('../images/christmas.gif');
+  background-color: green;
+}
+#home-page h1 {
+  margin: 0;
+  font-size: 5rem;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+.intro-text {
+  font-size: 1.5rem;
+  margin-left: 3%;
+}
+.intro-page {
+  font-size: 2rem;
+  margin-left: 3%;
+}
+
+/* List Page */
+#presents-list-page {
+  display: flex;
+  background-color: chocolate;
+}
+
+.list-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 0 40px;
+}
+.list-content h1 {
+  font-size: 3rem;
+  align-self: center;
+  margin: 20px;
+}
+.list-content form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  line-height: 35px;
+  background-color: rgba(56, 106, 139, 0.5);
+  border-radius: 10px;
+}
+.list-content form label {
+  font-size: 1.3rem;
+  flex-grow: 0;
+}
+.list-content form input {
+  flex-grow: 10;
+  height: 100%;
+  border: none;
+  font-size: 1.2rem;
+  padding-left: 10px;
+}
+.list-content form button {
+  flex-grow: 1;
+  height: 100%;
+  border: none;
+  background-color: #da7f10;
+  color: aliceblue;
+  font-size: 1.2rem;
+}
+.present-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.present-partial {
+  display: flex;
+  width: 200px;
+  height: 300px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+  padding-top: 10px;
+  margin: 10px;
+  background-color: rgba(62, 181, 41, 0.5);
+  border-radius: 10px;
+}
+.details-btn {
+  text-decoration: none;
+  color:#28231D;
+  font-weight: 800;
+  padding: 5px;
+  background-color: #a6ff00;
+  color: aliceblue;
+}
+.delete-present-btn {
+  text-decoration: none;
+  background-color: #b41e23;
+  padding: 5px;
+  color: aliceblue;
+}
+
+/* Detail Page */
+#detail-page {
+  display: flex;
+  background-color: aqua;
+}
+
+.go-back-btn {
+  text-decoration: none;
+  background-color: rgb(235, 27, 16);
+  padding: 10px;
+  border-radius: 5px;
+  color: #c16a00;
+}
+
+/* New Present Page */
+#new-present-page {
+  display: flex;
+  background-color: chocolate;
+}
+.new-present-content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 40px;
+  align-items: center;
+}
+.new-present-content h1 {
+  font-size: 3rem;
+}
+.new-present-content form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  line-height: 40px;
+}
+.new-present-content form label {
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+.new-present-content form button {
+  margin-top: 60px;
+  width: 50%;
+  height: 70px;
+  font-size: 1.3rem;
+  border: 0;
+  align-self: center;
+}
+
+/* Media querys */
+@media (max-width: 600px) {
+  /* Layout */
+  nav {
+    justify-content: space-evenly;
+  }
+  /* Home page */
+  #home-page {
+    background-size: cover;
+    background-position: center;
+  }
+  #home-page h1 {
+    font-size: 3rem;
+  }
+  .intro-text {
+    font-size: 1.3rem;
+    margin: 10%;
+  }
+  /* List Page */
+  
+  #presents-list-page .list-content{
+    padding: 0 10px;
+    color: #6B1518;
+  }
+  #presents-list-page .list-content h1{
+    font-size: 2rem;
+  }
+  #presents-list-page .list-content form {
+    flex-direction: column;
+  }
+  #presents-list-page .list-content form input {
+    width: 90%;
+  }
+  #presents-list-page .list-content .present-list {
+    justify-content: space-around;
+  }
+  
+
+  /* Detail Page */
+  #detail-page {
+    flex-direction: column;
+    align-items: center;
+  }
+  .detail-title {
+    width: 100%;
+    align-items: center;
+    height: 50%;
+    margin-bottom: 0;
+  }
+
+  .detail-content {
+    width: 90%;
+    height: 40%;
+    margin: 0;
+    padding: 10px;
+  }
+  /* New Present Page */
+  .new-present-content {
+    width: 100%;
+  }
 }
